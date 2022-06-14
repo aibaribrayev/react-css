@@ -1,0 +1,36 @@
+.pics-wrapper{ 
+    width: 100%; 
+    display: flex; 
+    padding: 10px;  
+    align-items: center;
+}
+
+.pic-box{
+    display: flex; 
+    position: relative; 
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+@media (min-width: 300px) {
+    .pics-wrapper{ 
+        flex-direction: column; 
+    }
+    .pic-box{
+        width: 98vw; 
+        height: 20vh; 
+    }
+} 
+@media (min-width: 992px) {
+    .pics-wrapper{ 
+        flex-direction: row; 
+    }
+    .pic-box{ 
+        width: 20vw; 
+        height: 98vh
+    }
+}
